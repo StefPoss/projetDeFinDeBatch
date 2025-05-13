@@ -1,17 +1,26 @@
-## <!-- docs/index.md -->
+---
+layout: default
+title: Accueil
+---
 
-## layout: default
+# Projet Fin de Batch
 
-# Projet Fin de Batch #165
+<div class="intro content-center">
 
-Bienvenue dans le dépôt **Projet de Fin de Batch**, qui centralise la gestion et la distribution des images via Cloudinary.
+Ce projet a pour **objectif** de centraliser la gestion et la distribution des images via **Cloudinary**, garantissant un CDN performant, la transformation à la volée et la facilité d’intégration côté frontend (React Native & web).
+
+**Contexte** :
+
+- Utilisation de Cloudinary (compte **deuhttaaq**) pour stocker et servir les assets.
+- Outils : `upload-front.js` et `list-images.js` pour upload & génération de galerie.
+- Documentation des routes API pour l’authentification et la récupération d’images.
+
+</div>
 
 ## Sommaire
 
 - [Galerie d’images](images-gallery.md)
 - [API Routes](routes.md)
-- [Objectif & Contexte](project-description.md)
+- [Objectif & Contexte](#projet-de-fin-de-batch)
 
 ---
-
-_Cette page est générée et maintenue manuellement pour présenter les différentes sections du projet._
