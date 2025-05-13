@@ -12,15 +12,15 @@ Ce projet a pour **objectif** de centraliser la gestion et la distribution des i
 **Contexte** :
 
 - Utilisation de Cloudinary (compte **deuhttaaq**) pour stocker et servir les assets.
-- Outils : `upload-front.js` et `list-images.js` pour upload & génération de galerie.
+- Outils : `upload-front.js` et `list-images.js` pour l’upload & génération de galerie.
 - Documentation des routes API pour l’authentification et la récupération d’images.
 
 </div>
 
 ## Sommaire
 
-- [Galerie d’images](images-gallery.md)
-- [API Routes](routes.md)
-- [Objectif & Contexte](#projet-de-fin-de-batch)
+- [Galerie d’images](images-gallery.html)  
+- [API Routes](routes.html)  
+- [Objectif & Contexte](#projet-fin-de-batch)
 
 ---
