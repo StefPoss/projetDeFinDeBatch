@@ -4,10 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>{{ page.title }} — {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/dark.css" />
+    <!-- Utilisation de baseurl pour GitHub Pages -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/dark.css" />
     <style>
-      /* Bouton toggle en haut à droite */
       #theme-toggle {
         position: fixed;
         top: 16px;
@@ -21,36 +21,29 @@
   </head>
   <body>
     <button id="theme-toggle">🌓</button>
-
     <header>
-      <h1><a href="/">{{ site.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
       <nav>
-        <a href="/">Accueil</a> | <a href="/images-gallery.html">Galerie</a> |
-        <a href="/routes.html">API</a>
+        <a href="{{ site.baseurl }}/">Accueil</a> |
+        <a href="{{ site.baseurl }}/images-gallery.html">Galerie</a> |
+        <a href="{{ site.baseurl }}/routes.html">API</a>
       </nav>
     </header>
 
-    <main class="{{ page.layout == 'default' ? 'content-center' : '' }}">
-      {{ content }}
-    </main>
+    <main class="content-center">{{ content }}</main>
 
     <footer>
-      Projet de Fin de Batch #165 - Amel, Nico, Sami, Soufiane, Stéphane - © Mai
+      Projet de Fin de Batch #165 — Amel, Nico, Sami, Soufiane, Stéphane — © Mai
       2025
     </footer>
 
     <script>
-      // Toggle dark/light mode
       const btn = document.getElementById("theme-toggle")
       const root = document.documentElement
-      // apply saved preference
       if (localStorage.theme === "dark") root.classList.add("dark-mode")
-      else if (localStorage.theme === "light")
-        root.classList.remove("dark-mode")
-
       btn.addEventListener("click", () => {
-        const isDark = root.classList.toggle("dark-mode")
-        localStorage.theme = isDark ? "dark" : "light"
+        const dark = root.classList.toggle("dark-mode")
+        localStorage.theme = dark ? "dark" : "light"
       })
     </script>
   </body>
