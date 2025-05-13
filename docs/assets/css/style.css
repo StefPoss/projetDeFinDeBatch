@@ -1,19 +1,17 @@
 /* docs/assets/css/style.css */
 
-/* Centrage des pages */
 .content-center {
   max-width: 960px;
   margin: 0 auto;
   padding: 16px 0;
 }
+/* reste de ton CSS... */
 
 /* Styles par défaut (light) */
 body {
   background: #fff;
   color: #333;
 }
-
-/* ... ton reste de style ... */
 
 /* Mode sombre forcé par class .dark-mode */
 .dark-mode body {
