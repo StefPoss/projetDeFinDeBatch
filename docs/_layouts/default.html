@@ -31,24 +31,12 @@
       h2,
       h3 {
         margin-bottom: 16px;
-        color: #111;
+        color: #111111;
       }
-      p {
+      p,
+      li {
         margin-bottom: 16px;
-      }
-      nav a {
-        color: #0366d6;
-        text-decoration: none;
-        margin-right: 12px;
-      }
-      nav a:hover {
-        text-decoration: underline;
-      }
-      footer {
-        margin-top: 40px;
-        text-align: center;
-        font-size: 0.9rem;
-        color: #666666;
+        color: #333333;
       }
       img {
         max-width: 100%;
@@ -83,25 +71,86 @@
         text-align: left;
       }
 
-      /* Toggle button repositionné */
-      #theme-toggle {
+      /* Liens unifiés en doré/orangé */
+      a {
+        color: #f0b429;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      header nav {
+        margin-bottom: 24px;
+      }
+      header nav a {
+        margin-right: 12px;
+      }
+
+      footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666666;
+      }
+
+      /* Toggle-switch à bascule */
+      .toggle-switch {
         position: absolute;
         top: 16px;
         right: 16px;
-        background: none;
-        border: none;
-        width: 32px;
-        height: 32px;
-        cursor: pointer;
       }
-      #theme-toggle svg {
+      .toggle-switch input {
+        display: none;
+      }
+      .switch-label {
+        display: block;
+        width: 60px;
+        height: 30px;
+        position: relative;
+        border-radius: 15px;
+        background: #ddd;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .switch-thumb {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+      .switch-track {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        fill: #333; /* couleur icon pour light mode */
-        transition: fill 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 6px;
+        font-size: 14px;
+        color: #666666;
       }
-      #theme-toggle:hover svg {
-        fill: #666;
+      .icon {
+        pointer-events: none;
+      }
+      .toggle-switch input:checked + .switch-label {
+        background: #555555;
+      }
+      .toggle-switch input:checked + .switch-label .switch-thumb {
+        transform: translateX(30px);
+      }
+      .toggle-switch input:checked + .switch-label .icon.light {
+        display: none;
+      }
+      .toggle-switch input:checked + .switch-label .icon.dark {
+        display: inline;
       }
 
       /* Dark mode */
@@ -112,17 +161,11 @@
       html.dark-mode h1,
       html.dark-mode h2,
       html.dark-mode h3 {
-        color: #fff;
+        color: #ffffff;
       }
       html.dark-mode p,
       html.dark-mode li {
-        color: #ddd;
-      }
-      html.dark-mode nav a {
-        color: #f0b429; /* doré/orangé */
-      }
-      html.dark-mode nav a:hover {
-        text-decoration: underline;
+        color: #cccccc;
       }
       html.dark-mode pre,
       html.dark-mode code {
@@ -135,23 +178,29 @@
       html.dark-mode table,
       html.dark-mode th,
       html.dark-mode td {
-        border-color: #333333;
+        border-color: #444444;
       }
-      html.dark-mode #theme-toggle svg {
-        fill: #f0b429; /* icon doré en dark */
+      html.dark-mode a {
+        color: #f0b429;
+      }
+      html.dark-mode .switch-label {
+        background: #666666;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <!-- Bouton toggle lune/soleil SVG -->
-      <button id="theme-toggle" aria-label="Basculer le mode sombre">
-        <svg viewBox="0 0 24 24">
-          <path
-            d="M12 3.1a1 1 0 011 1v1.8a1 1 0 11-2 0V4.1a1 1 0 011-1zm0 13a4 4 0 100-8 4 4 0 000 8zm8.9-4a1 1 0 01-1 1h-1.8a1 1 0 110-2h1.8a1 1 0 011 1zm-13 0a1 1 0 01-1 1H4.1a1 1 0 110-2h1.8a1 1 0 011 1zM17.66 6.34a1 1 0 010 1.414l-1.27 1.27a1 1 0 11-1.414-1.414l1.27-1.27a1 1 0 011.414 0zM8.34 15.66a1 1 0 010 1.414L7.07 18.34a1 1 0 01-1.414-1.414l1.27-1.27a1 1 0 011.414 0zM17.66 17.66a1 1 0 00-1.414 0l-1.27 1.27a1 1 0 001.414 1.414l1.27-1.27a1 1 0 000-1.414zM8.34 8.34a1 1 0 00-1.414 0L5.65 9.61a1 1 0 101.414 1.414l1.27-1.27a1 1 0 000-1.414z"
-          />
-        </svg>
-      </button>
+      <!-- Bouton toggle dark/light mode -->
+      <div class="toggle-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle" class="switch-label">
+          <span class="switch-thumb"></span>
+          <span class="switch-track">
+            <span class="icon light">☀️</span>
+            <span class="icon dark">🌙</span>
+          </span>
+        </label>
+      </div>
 
       <header>
         <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
