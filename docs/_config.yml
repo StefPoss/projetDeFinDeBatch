@@ -1,4 +1,5 @@
 title: Projet de Fin de Batch
-theme: none # On n’utilise pas un thème Jekyll préfabriqué
+baseurl: "/projetDeFinDeBatch"
+url: "https://StefPoss.github.io"
+theme: none
 markdown: kramdown
-plugins: []
