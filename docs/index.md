@@ -3,11 +3,11 @@ layout: default
 title: Accueil
 ---
 
-# Projet Fin de Batch
+# MooveIt : Projet Fin de Batch #165
 
-<div class="intro content-center">
+<div class="intro content-center" markdown="1">
 
-Ce projet a pour **objectif** de centraliser la gestion et la distribution des images via **Cloudinary**, garantissant un CDN performant, la transformation à la volée et la facilité d’intégration côté frontend (React Native & web).
+Ce projet a pour **objectif** de centraliser de développer une application mobile en React Native à destination d'utilisateurs souhaitant pratiquer une activité physique régulière. Divers outils et technogies seront présentées ici et documentées durant toute la durée de vie du projet.
 
 **Contexte** :
 
