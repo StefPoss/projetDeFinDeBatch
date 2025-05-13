@@ -1,0 +1,16 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "Upload images front vers Cloudinary",
+  "type": "module",
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "cloudinary": "^2.6.1",
+    "dotenv": "^16.5.0",
+    "glob": "^11.0.2"
+  },
+  "scripts": {
+    "upload:front": "node upload-front.js",
+    "gallery": "node list-images.js"
+  }
+}
