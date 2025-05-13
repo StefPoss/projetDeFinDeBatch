@@ -1,0 +1,4 @@
+title: Projet de Fin de Batch
+theme: none # On n’utilise pas un thème Jekyll préfabriqué
+markdown: kramdown
+plugins: []

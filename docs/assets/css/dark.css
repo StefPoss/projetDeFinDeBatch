@@ -1,0 +1,24 @@
+/* docs/assets/css/dark.css */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  a {
+    color: #66bbff;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+  }
+  pre,
+  code {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+  }
+  /* Ajuste ici tout autre élément (tables, images… ) */
+}
