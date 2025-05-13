@@ -1,18 +1,29 @@
-# .github/workflows/pages-deploy.yml
 name: Publish docs directory
 
+# Trigger sur chaque push vers main
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+
+# Donner la permission write au token pour le contenu
+permissions:
+  contents: write
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Deploy docs as-is to GitHub Pages
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Deploy docs to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          # Utilise le token par défaut qui a maintenant la permission write
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Répertoire à publier
           publish_dir: docs
+          # Branche cible pour les pages
           publish_branch: gh-pages
+          # Nettoyer la branche avant de publier
+          clean: true
