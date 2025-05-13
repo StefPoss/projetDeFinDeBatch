@@ -1,0 +1,61 @@
+/* docs/assets/css/dark.css */
+
+/* Styles for dark mode when .dark-mode class is on <html> */
+html.dark-mode body {
+  background: #121212;
+  color: #e0e0e0;
+}
+html.dark-mode header,
+html.dark-mode footer {
+  color: #bbb;
+}
+html.dark-mode nav a {
+  color: #58a6ff;
+}
+html.dark-mode nav a:hover {
+  text-decoration: underline;
+}
+html.dark-mode pre,
+html.dark-mode code {
+  background: #1e1e1e;
+  color: #c9d1d9;
+}
+html.dark-mode table th {
+  background: #2d2d2d;
+}
+html.dark-mode table,
+html.dark-mode th,
+html.dark-mode td {
+  border-color: #333;
+}
+
+/* Styles for dark mode based on user preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #e0e0e0;
+  }
+  header,
+  footer {
+    color: #bbb;
+  }
+  nav a {
+    color: #58a6ff;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  pre,
+  code {
+    background: #1e1e1e;
+    color: #c9d1d9;
+  }
+  table th {
+    background: #2d2d2d;
+  }
+  table,
+  th,
+  td {
+    border-color: #333;
+  }
+}

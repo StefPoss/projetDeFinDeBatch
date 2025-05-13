@@ -1,0 +1,6 @@
+title: Projet de Fin de Batch
+baseurl: "/projetDeFinDeBatch"
+url: "https://StefPoss.github.io"
+theme: none
+markdown: kramdown
+# trigger rebuild
