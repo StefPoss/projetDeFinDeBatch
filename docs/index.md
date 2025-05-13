@@ -19,8 +19,8 @@ Ce projet a pour **objectif** de centraliser la gestion et la distribution des i
 
 ## Sommaire
 
-- [Galerie d’images](images-gallery.html)  
-- [API Routes](routes.html)  
+- [Galerie d’images](images-gallery.html)
+- [API Routes](routes.html)
 - [Objectif & Contexte](#projet-fin-de-batch)
 
 ---
