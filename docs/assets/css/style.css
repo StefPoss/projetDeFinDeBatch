@@ -1,28 +1,93 @@
 /* docs/assets/css/style.css */
 
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  background: #ffffff;
+  color: #24292e;
+  padding: 16px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+h1,
+h2,
+h3 {
+  color: #111;
+  margin-bottom: 12px;
+}
+
+nav a {
+  color: #0366d6;
+  text-decoration: none;
+  margin-right: 12px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
 .content-center {
   max-width: 960px;
   margin: 0 auto;
   padding: 16px 0;
 }
-/* reste de ton CSS... */
 
-/* Styles par défaut (light) */
-body {
-  background: #fff;
-  color: #333;
+main {
+  min-height: 60vh;
 }
 
-/* Mode sombre forcé par class .dark-mode */
-.dark-mode body {
-  background: #121212;
-  color: #e0e0e0;
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
 }
-.dark-mode nav a {
-  color: #66bbff;
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
 }
-.dark-mode pre,
-.dark-mode code {
-  background: #1e1e1e;
-  color: #dcdcdc;
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+th {
+  background: #f6f8fa;
+  text-align: left;
+}
+
+/* Code & pre */
+pre,
+code {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+  background: #f6f8fa;
+  color: #24292e;
+  border-radius: 4px;
+}
+pre {
+  padding: 16px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+/* Images in markdown */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
 }
