@@ -21,26 +21,23 @@ async function generateMarkdownGallery() {
       prefix: "projectFinDeBatch/front/images",
       max_results: 500,
     });
-    ({
-      resource_type: "image",
-      prefix: "projectFinDeBatch/front/images",
-      max_results: 500,
-    });
     const images = result.resources;
 
     // Construire le markdown
-    let md = "# Galerie d'images Cloudinary\n\n";
+    let md = "# Images Gallery\n\n";
+    md += "## Galerie d'images Cloudinary\n\n";
     images.forEach((img) => {
       const url = img.secure_url.replace("/upload/", "/upload/f_auto,q_auto/");
       md += `![${img.public_id}](<${url}>)\n\n`;
     });
 
-    // Enregistrer dans un fichier
-    const outPath = path.join(process.cwd(), "image-gallery.md");
+    // Enregistrer dans docs/images-gallery.md
+    const outPath = path.join(process.cwd(), "..", "docs", "images-gallery.md");
     fs.writeFileSync(outPath, md);
     console.log(`Markdown gallery générée : ${outPath}`);
   } catch (err) {
     console.error("Erreur lors de la récupération des images :", err);
+    process.exit(1);
   }
 }
 
