@@ -1,32 +1,18 @@
-name: Deploy to GitHub Pages
+# .github/workflows/pages-deploy.yml
+name: Publish docs directory
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.x"
-
-      - name: Install bundler & Jekyll
-        run: |
-          gem install bundler
-          bundle init
-          echo "gem 'jekyll', '~> 4.2'" >> Gemfile
-          bundle install
-
-      - name: Build site with Jekyll
-        run: bundle exec jekyll build --source docs --destination _site
-
-      - name: Deploy to Pages
+      - name: Deploy docs as-is to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: docs
+          publish_branch: gh-pages
