@@ -8,6 +8,10 @@ title: Routes
 Voici un aperçu des principales routes backend exposées par le service API.  
 Elles permettent aux clients (web & mobile) de gérer les utilisateurs et d’accéder aux URLs Cloudinary.
 
+> Ces routes sont documentées ici pour que chaque membre de l’équipe sache comment intégrer l’authentification et la récupération des images depuis Cloudinary.
+
+---
+
 ## Authentification
 
 - **POST /api/signup**  
@@ -27,7 +31,7 @@ Elles permettent aux clients (web & mobile) de gérer les utilisateurs et d’ac
   Renvoie l’URL publique Cloudinary pour une image donnée.
 
   - **Params** :
-    - `category`: `"avatars" | "backgrounds" | "badges"`
+    - `category`: `"avatars" | "backgrounds" | "badges" | "natation" | "padel"  `
     - `id`: identifiant ou nom de fichier (sans extension)
   - **Réponse** : `{ "url": string }`
 
@@ -38,5 +42,3 @@ Elles permettent aux clients (web & mobile) de gérer les utilisateurs et d’ac
   - **Réponse** : `{ "publicId": string, "secureUrl": string }`
 
 ---
-
-> Ces routes sont documentées ici pour que chaque membre de l’équipe sache comment intégrer l’authentification et la récupération des images depuis Cloudinary.
