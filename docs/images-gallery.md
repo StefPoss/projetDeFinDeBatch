@@ -5,6 +5,8 @@ title: Gallery
 
 ## Galerie d'images Cloudinary
 
+### Hébergement des images du projet sur CDN via Cloudinary pour la gestion, la transformation et la distribution des images > permet de fournir les URLs optimisées pour le frontend (React Native & web).
+
 ![projectFinDeBatch/front/images/2025-04-24 09_06_23-Moove it](https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747168858/projectFinDeBatch/front/images/2025-04-24%2009_06_23-Moove%20it.png)
 
 ![projectFinDeBatch/front/images/activities/natation/natation-photo-001](https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif)
