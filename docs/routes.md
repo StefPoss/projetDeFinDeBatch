@@ -10,9 +10,10 @@ Elles permettent aux clients (web & mobile) de gérer les utilisateurs et d’ac
 
 > Ces routes sont documentées ici pour que chaque membre de l’équipe sache comment intégrer l’authentification et la récupération des images depuis Cloudinary.
 
----
 
-## AutheAUTTHENTIFICATION
+---
+## AUTHENTIFICATION
+---
 
 ### POST `/api/signup`
 **Objectif de la route :** créer un nouveau compte utilisateur.  
@@ -36,6 +37,7 @@ Elles permettent aux clients (web & mobile) de gérer les utilisateurs et d’ac
 }
 ```
 
+
 ### POST `/api/signin`
 **Objectif de la route :** authentifier un utilisateur existant.  
 **Requête :**  
@@ -57,7 +59,9 @@ Elles permettent aux clients (web & mobile) de gérer les utilisateurs et d’ac
 }
 ```
 
+---
 ## MÉDIAS
+---
 
 ### GET `/api/images/:category/:id`
 **Objectif de la route :** renvoyer l’URL publique Cloudinary pour une image donnée.  
