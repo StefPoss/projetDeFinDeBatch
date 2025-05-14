@@ -81,10 +81,28 @@
       }
 
       header nav {
+        display: flex;
+        justify-content: center; /* centre horizontalement le menu */
+        gap: 12px; /* espace régulier entre chaque lien et séparateur */
         margin-bottom: 24px;
       }
+
       header nav a {
-        margin-right: 12px;
+        position: relative;
+        color: #f0b429;
+        text-decoration: none;
+        padding: 0 6px; /* espace interne pour zone cliquable plus large */
+      }
+
+      header nav a::before {
+        /* pour tout lien qui n'est pas le premier, on dessine une "|" à gauche */
+        content: "|";
+        position: absolute;
+        left: -6px; /* recule le pipe pour qu'il soit à mi-espacement */
+        color: currentColor; /* même couleur que le lien */
+      }
+      header nav a:first-child::before {
+        content: ""; /* pas de "|" devant le premier lien */
       }
 
       footer {
@@ -205,8 +223,8 @@
       <header>
         <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
         <nav>
-          <a href="{{ site.baseurl }}/">Accueil</a> |
-          <a href="{{ site.baseurl }}/images-gallery.html">Galerie</a> |
+          <a href="{{ site.baseurl }}/">Accueil</a>
+          <a href="{{ site.baseurl }}/images-gallery.html">Galerie</a>
           <a href="{{ site.baseurl }}/routes.html">API</a>
         </nav>
       </header>
