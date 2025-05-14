@@ -20,6 +20,26 @@ header {
   margin-bottom: 24px;
 }
 
+/* 1. Déclare un grid sur le conteneur */
+.gallery {
+  display: grid;
+  /* 2. 4 colonnes de taille égale, qui prennent chacune une part de l'espace */
+  grid-template-columns: repeat(4, 1fr);
+  /* 3. Espacement uniforme entre tous les items */
+  gap: 16px;
+  /* 4. Optionnel : centre la galerie dans la page */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 5. Chaque image s'étire pour remplir sa cellule */
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* garantit que l'image remplit bien le cadre */
+  border-radius: 8px; /* coins arrondis pour l'esthétique */
+}
+
 h1,
 h2,
 h3 {
