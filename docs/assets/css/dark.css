@@ -28,6 +28,24 @@ html.dark-mode th,
 html.dark-mode td {
   border-color: #333;
 }
+html.dark-mode .gallery-card {
+  background: #222;
+  color: #eee;
+  box-shadow: 0 2px 8px #0004;
+}
+html.dark-mode .gallery-card .cloud-info {
+  color: #bbb;
+}
+html.dark-mode .gallery-card .cloud-tags {
+  color: #aaa;
+}
+html.dark-mode .gallery-card .gallery-variant a {
+  color: #9ecfff;
+}
+html.dark-mode .gallery-actions button {
+  background: #bb9819;
+  color: #222;
+}
 
 /* Styles for dark mode based on user preference */
 @media (prefers-color-scheme: dark) {
@@ -59,22 +77,3 @@ html.dark-mode td {
     border-color: #333;
   }
 }
-html.dark-mode .gallery-card {
-  background: #222;
-  color: #eee;
-  box-shadow: 0 2px 8px #0004;
-}
-html.dark-mode .gallery-card .cloud-info {
-  color: #bbb;
-}
-html.dark-mode .gallery-card .cloud-tags {
-  color: #aaa;
-}
-html.dark-mode .gallery-card .gallery-variant a {
-  color: #9ecfff;
-}
-html.dark-mode .gallery-actions button {
-  background: #bb9819;
-  color: #222;
-}
-
