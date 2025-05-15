@@ -47,3 +47,7 @@ html.dark-mode * {
   border-color: inherit;
   background-color: transparent;
 }
+html.dark-mode .gallery-card {
+  background: #23232b;
+  color: #e0e0e0;
+}
