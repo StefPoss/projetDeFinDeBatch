@@ -1,20 +1,8 @@
 
 <!--
 Galerie générée dynamiquement avec toutes les propriétés Cloudinary affichées.
+Le style des cards/galerie est maintenant dans /docs/assets/style.css et /docs/assets/dark.css
 -->
-<style>
-  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1200px; margin: 2rem auto; }
-  @media (max-width: 1000px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 600px) { .gallery { grid-template-columns: 1fr; } }
-  .gallery-card { background: #fafafa; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px #0001; padding: 12px; display: flex; flex-direction: column; align-items: center; }
-  .gallery-card img { width: 100%; border-radius: 8px; object-fit: cover; transition: filter 0.2s; }
-  .cloud-tags { margin: 8px 0; font-size: .85em; color: #888; }
-  .cloud-info { font-size: .9em; color: #444; margin-bottom: 6px; }
-  .gallery-actions { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
-  .gallery-actions button { border: none; background: #f0b429; color: #222; border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: .95em; transition: background 0.2s; }
-  .gallery-actions button:active { background: #c29526; }
-  .gallery-variant { margin-top: 6px; font-size: 0.85em; color: #607d8b; }
-</style>
 <div class="gallery">
 
   <div class="gallery-card">
@@ -31,13 +19,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169059/projectFinDeBatch/front/images/activities/natation/natation-photo-001.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -56,13 +44,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169057/projectFinDeBatch/front/images/activities/natation/natation-photo-002.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -81,13 +69,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169055/projectFinDeBatch/front/images/activities/natation/natation-photo-003.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -106,13 +94,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169052/projectFinDeBatch/front/images/activities/natation/natation-photo-004.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -131,13 +119,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169050/projectFinDeBatch/front/images/activities/natation/natation-photo-005.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -156,13 +144,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169048/projectFinDeBatch/front/images/activities/natation/natation-photo-006.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -181,13 +169,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169043/projectFinDeBatch/front/images/activities/natation/natation-photo-007.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -206,13 +194,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169041/projectFinDeBatch/front/images/activities/natation/natation-photo-008.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -231,13 +219,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169040/projectFinDeBatch/front/images/activities/natation/natation-photo-009.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -256,13 +244,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169038/projectFinDeBatch/front/images/activities/natation/natation-photo-010.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -281,13 +269,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169036/projectFinDeBatch/front/images/activities/natation/natation-photo-011.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -306,13 +294,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169034/projectFinDeBatch/front/images/activities/natation/natation-photo-012.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -331,13 +319,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169031/projectFinDeBatch/front/images/activities/natation/natation-photo-013.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -356,13 +344,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169030/projectFinDeBatch/front/images/activities/natation/natation-photo-014.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -381,13 +369,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169028/projectFinDeBatch/front/images/activities/natation/natation-photo-015.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -406,13 +394,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169025/projectFinDeBatch/front/images/activities/natation/natation-photo-016.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -431,13 +419,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169023/projectFinDeBatch/front/images/activities/natation/natation-photo-017.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -456,13 +444,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169021/projectFinDeBatch/front/images/activities/natation/natation-photo-018.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -481,13 +469,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169020/projectFinDeBatch/front/images/activities/natation/natation-photo-019.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -506,13 +494,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169018/projectFinDeBatch/front/images/activities/natation/natation-photo-020.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -531,13 +519,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169017/projectFinDeBatch/front/images/activities/natation/natation-photo-021.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -556,13 +544,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169015/projectFinDeBatch/front/images/activities/natation/natation-photo-022.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -581,13 +569,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169014/projectFinDeBatch/front/images/activities/natation/natation-photo-023.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -606,13 +594,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169012/projectFinDeBatch/front/images/activities/natation/natation-photo-024.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -631,13 +619,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169011/projectFinDeBatch/front/images/activities/natation/natation-photo-025.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -656,13 +644,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169010/projectFinDeBatch/front/images/activities/natation/natation-photo-026.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -681,13 +669,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169008/projectFinDeBatch/front/images/activities/natation/natation-photo-027.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -706,13 +694,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169005/projectFinDeBatch/front/images/activities/natation/natation-photo-028.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -731,13 +719,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169003/projectFinDeBatch/front/images/activities/natation/natation-photo-029.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -756,13 +744,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169001/projectFinDeBatch/front/images/activities/natation/natation-photo-030.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -781,13 +769,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747169000/projectFinDeBatch/front/images/activities/natation/natation-photo-031.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -806,13 +794,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168998/projectFinDeBatch/front/images/activities/natation/natation-photo-032.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -831,13 +819,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168997/projectFinDeBatch/front/images/activities/natation/natation-photo-033.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -856,13 +844,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168995/projectFinDeBatch/front/images/activities/natation/natation-photo-034.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -881,13 +869,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168994/projectFinDeBatch/front/images/activities/natation/natation-photo-035.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -906,13 +894,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168992/projectFinDeBatch/front/images/activities/natation/natation-photo-036.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -931,13 +919,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168991/projectFinDeBatch/front/images/activities/natation/natation-photo-037.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -956,13 +944,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168989/projectFinDeBatch/front/images/activities/natation/natation-photo-038.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -981,13 +969,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168987/projectFinDeBatch/front/images/activities/natation/natation-photo-039.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1006,13 +994,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168986/projectFinDeBatch/front/images/activities/natation/natation-photo-040.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1031,13 +1019,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168984/projectFinDeBatch/front/images/activities/padel/padel-photo-001.png" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1056,13 +1044,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168981/projectFinDeBatch/front/images/activities/padel/padel-photo-002.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1081,13 +1069,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168980/projectFinDeBatch/front/images/activities/padel/padel-photo-003.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1106,13 +1094,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168978/projectFinDeBatch/front/images/activities/padel/padel-photo-004.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1131,13 +1119,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168977/projectFinDeBatch/front/images/activities/padel/padel-photo-005.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1156,13 +1144,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168975/projectFinDeBatch/front/images/activities/padel/padel-photo-006.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1181,13 +1169,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168973/projectFinDeBatch/front/images/activities/padel/padel-photo-007.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1206,13 +1194,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168968/projectFinDeBatch/front/images/activities/padel/padel-photo-008.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1231,13 +1219,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168966/projectFinDeBatch/front/images/activities/padel/padel-photo-009.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1256,13 +1244,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168964/projectFinDeBatch/front/images/activities/padel/padel-photo-010.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1281,13 +1269,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168963/projectFinDeBatch/front/images/activities/padel/padel-photo-011.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1306,13 +1294,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168961/projectFinDeBatch/front/images/activities/padel/padel-photo-012.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1331,13 +1319,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168960/projectFinDeBatch/front/images/activities/padel/padel-photo-013.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1356,13 +1344,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168959/projectFinDeBatch/front/images/activities/padel/padel-photo-014.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1381,13 +1369,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168957/projectFinDeBatch/front/images/activities/padel/padel-photo-015.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1406,13 +1394,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168955/projectFinDeBatch/front/images/activities/padel/padel-photo-016.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1431,13 +1419,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168953/projectFinDeBatch/front/images/activities/padel/padel-photo-017.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1456,13 +1444,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168949/projectFinDeBatch/front/images/activities/padel/padel-photo-018.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1481,13 +1469,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168947/projectFinDeBatch/front/images/activities/padel/padel-photo-019.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1506,13 +1494,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168945/projectFinDeBatch/front/images/activities/padel/padel-photo-020.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1531,13 +1519,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168943/projectFinDeBatch/front/images/activities/padel/padel-photo-021.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1556,13 +1544,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168942/projectFinDeBatch/front/images/activities/padel/padel-photo-022.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1581,13 +1569,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168940/projectFinDeBatch/front/images/activities/padel/padel-photo-023.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1606,13 +1594,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168938/projectFinDeBatch/front/images/activities/padel/padel-photo-024.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1631,13 +1619,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168932/projectFinDeBatch/front/images/activities/padel/padel-photo-025.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1656,13 +1644,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168930/projectFinDeBatch/front/images/activities/padel/padel-photo-026.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1681,13 +1669,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168929/projectFinDeBatch/front/images/activities/padel/padel-photo-027.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1706,13 +1694,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168927/projectFinDeBatch/front/images/activities/padel/padel-photo-028.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1731,13 +1719,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168925/projectFinDeBatch/front/images/activities/padel/padel-photo-029.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1756,13 +1744,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168924/projectFinDeBatch/front/images/activities/padel/padel-photo-030.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1781,13 +1769,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168922/projectFinDeBatch/front/images/activities/padel/padel-photo-031.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1806,13 +1794,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168920/projectFinDeBatch/front/images/activities/padel/padel-photo-032.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1831,13 +1819,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168916/projectFinDeBatch/front/images/activities/padel/padel-photo-033.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1856,13 +1844,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168905/projectFinDeBatch/front/images/activities/padel/padel-photo-034.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1881,13 +1869,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168901/projectFinDeBatch/front/images/activities/padel/padel-photo-035.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1906,13 +1894,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168898/projectFinDeBatch/front/images/activities/padel/padel-photo-036.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1931,13 +1919,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168897/projectFinDeBatch/front/images/activities/padel/padel-photo-037.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1956,13 +1944,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168895/projectFinDeBatch/front/images/activities/padel/padel-photo-038.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -1981,13 +1969,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168893/projectFinDeBatch/front/images/activities/padel/padel-photo-039.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2006,13 +1994,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168890/projectFinDeBatch/front/images/activities/padel/padel-photo-040.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2031,13 +2019,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168888/projectFinDeBatch/front/images/activities/padel/padel-photo-041.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2056,13 +2044,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168886/projectFinDeBatch/front/images/activities/padel/padel-photo-042.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2081,13 +2069,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168884/projectFinDeBatch/front/images/activities/padel/padel-photo-043.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2106,13 +2094,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168882/projectFinDeBatch/front/images/activities/padel/padel-photo-044.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2131,13 +2119,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168881/projectFinDeBatch/front/images/activities/padel/padel-photo-045.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2156,13 +2144,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168879/projectFinDeBatch/front/images/activities/padel/padel-photo-046.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2181,13 +2169,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168877/projectFinDeBatch/front/images/activities/padel/padel-photo-047.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2206,13 +2194,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168876/projectFinDeBatch/front/images/activities/padel/padel-photo-048.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2231,13 +2219,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168874/projectFinDeBatch/front/images/activities/padel/padel-photo-049.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2256,13 +2244,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168872/projectFinDeBatch/front/images/activities/padel/padel-photo-050.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2281,13 +2269,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168871/projectFinDeBatch/front/images/activities/padel/padel-photo-051.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2306,13 +2294,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168869/projectFinDeBatch/front/images/activities/padel/padel-photo-052.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2331,13 +2319,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168868/projectFinDeBatch/front/images/activities/padel/padel-photo-053.avif" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2356,13 +2344,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168867/projectFinDeBatch/front/images/backgrounds/background-padel-01.png" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2381,13 +2369,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168857/projectFinDeBatch/front/images/LogoMooveIt.png" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
@@ -2406,13 +2394,13 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     </div>
     
       <div class="gallery-variant">
-        Voir en :
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" target="_blank">AVIF</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" target="_blank">JPG</a> |
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" target="_blank">Carré</a>
-        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" target="_blank">Vignette</a>
+        <span>Voir en :</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" class="variant-link" target="_blank">AVIF</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" class="variant-link" target="_blank">JPG</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_400,h_400,c_fill/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" class="variant-link" target="_blank">Carré</a>
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/w_256/v1747168865/projectFinDeBatch/front/images/no-backgrounds/natation_nobackground.png" class="variant-link" target="_blank">Vignette</a>
       </div>
     
   </div>
