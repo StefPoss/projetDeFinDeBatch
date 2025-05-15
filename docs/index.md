@@ -5,7 +5,7 @@ title: Accueil
 
 # MooveIt (Batch #165)
 
-<div class="intro content-center" markdown="1">
+<div class="content-center" markdown="1">
 
 Ce projet a pour **objectif** de développer une application mobile en React Native à destination d'utilisateurs souhaitant pratiquer une activité physique régulière.
 Divers outils et technologies seront présentées ici et documentées durant toute la durée de vie du projet.
