@@ -124,6 +124,7 @@ img {
   align-items: center;
   margin-bottom: 8px;
 }
+
 .gallery-card .cloud-info {
   font-size: 0.9em;
   color: #444;
@@ -163,3 +164,30 @@ img {
   color: #0066cc;
   text-decoration: underline;
 }
+.gallery-variant {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 8px;
+  font-size: 0.92em;
+  color: #607d8b;
+}
+.gallery-variant .variant-link {
+  background: #f0b42922;
+  color: #0066cc;
+  padding: 1px 7px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.gallery-variant .variant-link:hover {
+  background: #f0b429;
+  color: #222;
+}
+.gallery-variant .sep {
+  margin: 0 0.5em;
+  color: #b6b6b6;
+}
+

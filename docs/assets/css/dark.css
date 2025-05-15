@@ -29,9 +29,9 @@ html.dark-mode td {
   border-color: #333;
 }
 html.dark-mode .gallery-card {
-  background: #222;
+  background: #232323;
   color: #eee;
-  box-shadow: 0 2px 8px #0004;
+  box-shadow: 0 2px 8px #0008;
 }
 html.dark-mode .gallery-card .cloud-info {
   color: #bbb;
@@ -39,12 +39,28 @@ html.dark-mode .gallery-card .cloud-info {
 html.dark-mode .gallery-card .cloud-tags {
   color: #aaa;
 }
+
 html.dark-mode .gallery-card .gallery-variant a {
   color: #9ecfff;
 }
 html.dark-mode .gallery-actions button {
   background: #bb9819;
   color: #222;
+}
+
+html.dark-mode .gallery-variant {
+  color: #c0d8f5;
+}
+html.dark-mode .gallery-variant .variant-link {
+  background: #bba40f33;
+  color: #8fd6ff;
+}
+html.dark-mode .gallery-variant .variant-link:hover {
+  background: #bb9819;
+  color: #222;
+}
+html.dark-mode .gallery-variant .sep {
+  color: #777;
 }
 
 /* Styles for dark mode based on user preference */

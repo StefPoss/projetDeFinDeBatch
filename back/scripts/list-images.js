@@ -4,7 +4,6 @@ const { v2: cloudinary } = require("cloudinary")
 const fs = require("fs")
 const path = require("path")
 
-// Configuration Cloudinary via .env variables
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
@@ -52,47 +51,41 @@ async function generateGalleries() {
     let md = `
 <!--
 Galerie générée dynamiquement avec toutes les propriétés Cloudinary affichées.
+Le style des cards/galerie est maintenant dans /docs/assets/style.css et /docs/assets/dark.css
 -->
-<style>
-  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1200px; margin: 2rem auto; }
-  @media (max-width: 1000px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 600px) { .gallery { grid-template-columns: 1fr; } }
-  .gallery-card { background: #fafafa; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px #0001; padding: 12px; display: flex; flex-direction: column; align-items: center; }
-  .gallery-card img { width: 100%; border-radius: 8px; object-fit: cover; transition: filter 0.2s; }
-  .cloud-tags { margin: 8px 0; font-size: .85em; color: #888; }
-  .cloud-info { font-size: .9em; color: #444; margin-bottom: 6px; }
-  .gallery-actions { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
-  .gallery-actions button { border: none; background: #f0b429; color: #222; border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: .95em; transition: background 0.2s; }
-  .gallery-actions button:active { background: #c29526; }
-  .gallery-variant { margin-top: 6px; font-size: 0.85em; color: #607d8b; }
-</style>
 <div class="gallery">
 `
 
     images.forEach((img) => {
-      // Prépare variantes format
+      // Prépare variantes format + crop/resize
       let variants = `
       <div class="gallery-variant">
-        Voir en :
+        <span>Voir en :</span>
         <a href="${img.original_url.replace(
           "/upload/",
           "/upload/f_avif/"
-        )}" target="_blank">AVIF</a> |
+        )}" class="variant-link" target="_blank">AVIF</a>
         <a href="${img.original_url.replace(
           "/upload/",
           "/upload/f_jpg/"
-        )}" target="_blank">JPG</a> |
+        )}" class="variant-link" target="_blank">JPG</a>
         <a href="${img.original_url.replace(
           "/upload/",
           "/upload/f_png/"
-        )}" target="_blank">PNG</a>
-        &nbsp;|&nbsp;
+        )}" class="variant-link" target="_blank">PNG</a>
+        <span class="sep">|</span>
         <a href="${img.original_url
           .replace("/upload/", "/upload/w_400,h_400,c_fill/")
-          .replace(/f_[^/]+\//, "")}" target="_blank">Carré</a>
+          .replace(
+            /f_[^/]+\//,
+            ""
+          )}" class="variant-link" target="_blank">Carré</a>
         <a href="${img.original_url
           .replace("/upload/", "/upload/w_256/")
-          .replace(/f_[^/]+\//, "")}" target="_blank">Vignette</a>
+          .replace(
+            /f_[^/]+\//,
+            ""
+          )}" class="variant-link" target="_blank">Vignette</a>
       </div>
     `
       md += `
