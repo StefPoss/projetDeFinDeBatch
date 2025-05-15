@@ -32,6 +32,18 @@ header {
   margin: 0 auto;
 }
 
+@media (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* 5. Chaque image s'étire pour remplir sa cellule */
 .gallery img {
   width: 100%;
@@ -190,4 +202,3 @@ img {
   margin: 0 0.5em;
   color: #b6b6b6;
 }
-
