@@ -11,43 +11,43 @@ Hébergement des images du projet sur CDN via Cloudinary pour la gestion, la tra
 
 <!-- 1. Ton CSS Grid pour la galerie -->
 <style>
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    max-width: 1200px;
-    margin: 2rem auto;
-  }
-  .gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  @media (max-width: 768px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1200px; margin: 2rem auto; }
+  @media (max-width: 1000px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .gallery { grid-template-columns: 1fr; } }
+  .gallery-card { background: #fafafa; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px #0001; padding: 8px; display: flex; flex-direction: column; align-items: center; }
+  .gallery-card img { width: 100%; border-radius: 8px; }
+  .cloud-tags { margin: 8px 0; font-size: .85em; color: #888; }
+  .gallery-actions { margin-top: 8px; display: flex; gap: 8px; }
+  .gallery-actions button { border: none; background: #f0b429; color: #222; border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: .95em; }
 </style>
 
 <!-- 2. Conteneur de la galerie -->
 <div id="gallery" class="gallery"></div>
 
-<!-- 3. Script client pour peupler la galerie -->
+<!-- 3. Script client pour populer la galerie -->
 <script>
-  (function() {
-    fetch('/data/imagesData.json')
-      .then(res => res.json())
-      .then(images => {
-        const gallery = document.getElementById('gallery');
-        images.forEach(({ url, alt }) => {
-          const img = document.createElement('img');
-          img.src = url;
-          img.alt = alt;
-          gallery.appendChild(img);
-        });
-      })
-      .catch(err => console.error('Erreur galerie :', err));
-  })();
+(async function () {
+  // Version proxy backend (recommandé, pour garder ta clé Cloudinary safe)
+  const images = await fetch('/api/cloudinary-images').then(r => r.json());
+
+  const gallery = document.getElementById('gallery');
+  images.forEach(img => {
+    const card = document.createElement('div');
+    card.className = 'gallery-card';
+    // Affichage image
+    card.innerHTML = `
+      <img src="${img.secure_url.replace('/upload/', '/upload/f_auto,q_auto/')}" alt="${img.public_id}">
+      <div class="cloud-tags">${(img.tags || []).join(', ')}</div>
+      <div class="gallery-actions">
+        <button onclick="window.open('${img.secure_url}', '_blank')">Ouvrir</button>
+        <button onclick="navigator.clipboard.writeText('${img.secure_url}')">Copier URL</button>
+        ${img.colors && img.colors.length > 0
+          ? `<button onclick="alert('Variantes couleur non implémentées')">Voir couleurs</button>`
+          : ''
+        }
+      </div>
+    `;
+    gallery.appendChild(card);
+  });
+})();
 </script>
