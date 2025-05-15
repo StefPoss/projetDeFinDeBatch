@@ -72,22 +72,29 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
     images.forEach((img) => {
       // Prépare variantes format
       let variants = `
-        <div class="gallery-variant">
-          Voir en :
-          <a href="${img.original_url.replace(
-            "upload/",
-            "upload/f_avif/"
-          )}" target="_blank">AVIF</a> |
-          <a href="${img.original_url.replace(
-            "upload/",
-            "upload/f_jpg/"
-          )}" target="_blank">JPG</a> |
-          <a href="${img.original_url.replace(
-            "upload/",
-            "upload/f_png/"
-          )}" target="_blank">PNG</a>
-        </div>
-      `
+      <div class="gallery-variant">
+        Voir en :
+        <a href="${img.original_url.replace(
+          "/upload/",
+          "/upload/f_avif/"
+        )}" target="_blank">AVIF</a> |
+        <a href="${img.original_url.replace(
+          "/upload/",
+          "/upload/f_jpg/"
+        )}" target="_blank">JPG</a> |
+        <a href="${img.original_url.replace(
+          "/upload/",
+          "/upload/f_png/"
+        )}" target="_blank">PNG</a>
+        &nbsp;|&nbsp;
+        <a href="${img.original_url
+          .replace("/upload/", "/upload/w_400,h_400,c_fill/")
+          .replace(/f_[^/]+\//, "")}" target="_blank">Carré</a>
+        <a href="${img.original_url
+          .replace("/upload/", "/upload/w_256/")
+          .replace(/f_[^/]+\//, "")}" target="_blank">Vignette</a>
+      </div>
+    `
       md += `
   <div class="gallery-card">
     <img src="${img.url}" alt="${img.alt}" data-original="${img.url}">

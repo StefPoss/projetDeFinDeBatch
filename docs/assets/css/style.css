@@ -111,3 +111,55 @@ img {
   display: block;
   margin-bottom: 16px;
 }
+
+.gallery-card {
+  background: #fafafa;
+  color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #0001;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.gallery-card .cloud-info {
+  font-size: 0.9em;
+  color: #444;
+  margin-bottom: 6px;
+}
+.gallery-card .cloud-tags {
+  margin: 8px 0;
+  font-size: 0.85em;
+  color: #888;
+}
+.gallery-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-actions button {
+  border: none;
+  background: #f0b429;
+  color: #222;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background 0.2s;
+}
+.gallery-actions button:active {
+  background: #c29526;
+}
+.gallery-variant {
+  margin-top: 6px;
+  font-size: 0.85em;
+  color: #607d8b;
+}
+.gallery-variant a {
+  color: #0066cc;
+  text-decoration: underline;
+}
