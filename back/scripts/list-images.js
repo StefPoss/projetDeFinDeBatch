@@ -1,5 +1,5 @@
 // scripts/list-images.js
-require("dotenv/config")
+require("dotenv").config({ path: path.join(__dirname, "../.env") })
 const { v2: cloudinary } = require("cloudinary")
 const fs = require("fs")
 const path = require("path")
@@ -37,13 +37,9 @@ async function generateGalleries() {
     }))
 
     // 1. Génère le JSON riche pour le frontend
-    const jsonPath = path.join(
-      process.cwd(),
-      "..",
-      "front",
-      "data",
-      "imagesData.json"
-    )
+    const jsonDir = path.join(__dirname, "../../front/data")
+    if (!fs.existsSync(jsonDir)) fs.mkdirSync(jsonDir, { recursive: true })
+    const jsonPath = path.join(jsonDir, "imagesData.json")
     fs.writeFileSync(jsonPath, JSON.stringify(images, null, 2), "utf-8")
     console.log("✅ JSON enrichi généré :", jsonPath)
 
@@ -135,7 +131,7 @@ document.querySelectorAll('.gallery-card').forEach(card => {
 </script>
     `
 
-    const mdPath = path.join(process.cwd(), "..", "docs", "images-gallery.md")
+    const mdPath = path.join(__dirname, "../../docs/images-gallery.md")
     fs.writeFileSync(mdPath, md, "utf-8")
     console.log("✅ Markdown enrichi généré :", mdPath)
   } catch (err) {
