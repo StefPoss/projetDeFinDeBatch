@@ -1,8 +1,8 @@
 // scripts/list-images.js
+const path = require("path")
 require("dotenv").config({ path: path.join(__dirname, "../.env") })
 const { v2: cloudinary } = require("cloudinary")
 const fs = require("fs")
-const path = require("path")
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -24,6 +24,7 @@ async function generateGalleries() {
       type: "upload",
       prefix: "projectFinDeBatch/front/images",
       max_results: 500,
+      tags: true,
     })
     const images = result.resources.map((img) => ({
       url: img.secure_url.replace("/upload/", "/upload/f_auto,q_auto/"),
