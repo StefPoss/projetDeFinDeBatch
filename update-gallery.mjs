@@ -41,6 +41,7 @@ const filesToAdd = [
   "back/front/data/imagesData.json",
   "back/docs/images-gallery.md",
 ]
+
 for (const relPath of filesToAdd) {
   const absPath = path.join(__dirname, relPath)
   if (!fs.existsSync(absPath)) {

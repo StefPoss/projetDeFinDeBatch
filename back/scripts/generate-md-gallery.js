@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename)
 // Chemin d’entrée : JSON généré par list-images.js
 const dataJsonPath = path.resolve(__dirname, "../front/data/imagesData.json")
 // Chemin de sortie : galerie Markdown pour docs ou racine du projet
-const galleryMdPath = path.resolve(__dirname, "../docs/images-gallery.md")
+const galleryMdPath = path.resolve(__dirname, "../../docs/images-gallery.md")
 
 // Lecture du JSON contenant les infos images
 const images = JSON.parse(fs.readFileSync(dataJsonPath, "utf-8"))
