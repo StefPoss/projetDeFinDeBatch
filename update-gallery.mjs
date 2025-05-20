@@ -1,4 +1,4 @@
-// update-gallery.js
+// update-gallery.mjs
 // À placer à la racine du projet (parent de /back et /front)
 
 import { execSync } from "child_process"
@@ -21,6 +21,10 @@ function run(cmd, cwd = process.cwd()) {
   }
 }
 
+// 0. (Optionnel) Upload images locales vers Cloudinary
+// Décommente la ligne suivante pour uploader toutes les images locales avant de générer le JSON :
+// run("node scripts/upload-front.js", path.join(__dirname, "back"))
+
 // 1. Génère le JSON d'images (list-images.js)
 run("node scripts/list-images.js", path.join(__dirname, "back"))
 
@@ -28,7 +32,10 @@ run("node scripts/list-images.js", path.join(__dirname, "back"))
 run("node scripts/generate-md-gallery.js", path.join(__dirname, "back"))
 
 // 3. Ajoute les fichiers générés au suivi git et commit
-const filesToAdd = ["front/data/imagesData.json", "docs/images-gallery.md"]
+const filesToAdd = [
+  "back/front/data/imagesData.json",
+  "back/docs/images-gallery.md",
+]
 for (const relPath of filesToAdd) {
   const absPath = path.join(__dirname, relPath)
   if (!fs.existsSync(absPath)) {
