@@ -9,27 +9,44 @@ import { fileURLToPath } from "url"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// Chemin d’entrée : JSON généré par list-images.js
-const dataJsonPath = path.resolve(__dirname, "../front/data/imagesData.json")
-// Chemin de sortie : galerie Markdown pour docs ou racine du projet
+// Chemin d’entrée : JSON généré par list-images.js (attention au chemin si tu as déplacé front/data)
+const dataJsonPath = path.resolve(__dirname, "../../front/data/imagesData.json")
+// Chemin de sortie : galerie Markdown pour docs à la racine du projet
 const galleryMdPath = path.resolve(__dirname, "../../docs/images-gallery.md")
 
 // Lecture du JSON contenant les infos images
 const images = JSON.parse(fs.readFileSync(dataJsonPath, "utf-8"))
 
-// Fonction utilitaire pour affichage humain de la taille des fichiers
-function humanFileSize(bytes) {
-  if (bytes === 0) return "0 Ko"
-  const i = Math.floor(Math.log(bytes) / Math.log(1024))
-  const sizes = ["octets", "Ko", "Mo", "Go"]
-  return (bytes / Math.pow(1024, i)).toFixed(i ? 1 : 0) + " " + sizes[i]
-}
+// Trie par date d'upload décroissante (plus récentes d'abord)
+images.sort((a, b) => {
+  if (b.created_at && a.created_at) {
+    return new Date(b.created_at) - new Date(a.created_at)
+  }
+  return 0
+})
+
+// Récupère la liste de tous les tags uniques pour la génération des filtres
+const allTags = Array.from(
+  new Set(images.flatMap((img) => img.tags || []))
+).sort()
 
 // Début du contenu Markdown + CSS pour la grille
 let md = `
 <!--
 Galerie générée dynamiquement avec toutes les propriétés Cloudinary affichées.
 -->
+<div id="gallery-filters" style="margin-bottom: 1em;">
+  <b>Filtres par tag :</b>
+  ${allTags
+    .map(
+      (tag) => `
+    <label style="margin-right: 10px;">
+      <input type="checkbox" class="gallery-tag-filter" value="${tag}"> ${tag}
+    </label>
+  `
+    )
+    .join("")}
+</div>
 <style>
   .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1200px; margin: 2rem auto; }
   @media (max-width: 1000px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
@@ -46,7 +63,6 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
 <div class="gallery">
 `
 
-// Génération d’une card par image, avec actions et variantes de format
 images.forEach((img) => {
   let variants = ""
   if (img.format && img.format !== "avif") {
@@ -66,7 +82,7 @@ images.forEach((img) => {
     `
   }
   md += `
-  <div class="gallery-card">
+  <div class="gallery-card" data-tags="${(img.tags || []).join(",")}">
     <img src="${img.url}" alt="${img.alt}" data-original="${img.url}">
     <div class="cloud-info">
       Format : <b>${img.format || "-"}</b> | Dimensions : <b>${
@@ -87,7 +103,7 @@ images.forEach((img) => {
   `
 })
 
-// JS intégré pour le copier/coller d’URL et les filtres visuels
+// JS intégré pour le copier/coller d’URL, les filtres visuels, et le filtre multi-tags
 md += `</div>
 <script>
 // Boutons Copier
@@ -98,7 +114,7 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
     setTimeout(() => btn.textContent = "Copier URL", 1200)
   })
 })
-// Boutons Filtres
+// Boutons Filtres couleurs
 document.querySelectorAll('.gallery-card').forEach(card => {
   const img = card.querySelector('img')
   card.querySelectorAll('.filter-btn').forEach(btn => {
@@ -108,6 +124,22 @@ document.querySelectorAll('.gallery-card').forEach(card => {
     })
   })
 })
+// Filtres par tags cumulatif
+const filterCheckboxes = document.querySelectorAll('.gallery-tag-filter')
+filterCheckboxes.forEach(cb => cb.addEventListener('change', filterGallery))
+
+function filterGallery() {
+  const checked = Array.from(filterCheckboxes).filter(cb => cb.checked).map(cb => cb.value)
+  document.querySelectorAll('.gallery-card').forEach(card => {
+    const tags = (card.dataset.tags || "").split(",").filter(Boolean)
+    // Affiche si tous les tags cochés sont dans l'image (cumulatif ET)
+    if (!checked.length || checked.every(tag => tags.includes(tag))) {
+      card.style.display = ""
+    } else {
+      card.style.display = "none"
+    }
+  })
+}
 </script>
 `
 
@@ -117,4 +149,12 @@ if (!fs.existsSync(galleryDir)) fs.mkdirSync(galleryDir, { recursive: true })
 
 // Génère la galerie Markdown
 fs.writeFileSync(galleryMdPath, md, "utf-8")
-console.log("✅ images-gallery.md généré enrichi et interactif !")
+console.log("✅ images-gallery.md généré enrichi, trié et filtrable !")
+
+// Fonction utilitaire (déjà présente mais il vaut mieux la redéfinir ici)
+function humanFileSize(bytes) {
+  if (bytes === 0) return "0 Ko"
+  const i = Math.floor(Math.log(bytes) / Math.log(1024))
+  const sizes = ["octets", "Ko", "Mo", "Go"]
+  return (bytes / Math.pow(1024, i)).toFixed(i ? 1 : 0) + " " + sizes[i]
+}

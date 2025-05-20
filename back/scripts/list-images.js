@@ -7,11 +7,9 @@ import { v2 as cloudinary } from "cloudinary"
 import fs from "fs"
 import { fileURLToPath } from "url"
 
-// Gestion du contexte de chemin (pour scripts)
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// Charge les credentials Cloudinary depuis .env (à la racine du projet)
 dotenv.config({ path: path.join(__dirname, "../.env") })
 
 cloudinary.config({
@@ -47,10 +45,11 @@ async function generateGalleries() {
       width: img.width,
       height: img.height,
       bytes: img.bytes,
+      created_at: img.created_at, // <-- nouvelle propriété (date d'upload)
     }))
 
     // Génère le JSON pour le frontend, dans le bon dossier
-    const jsonDir = path.join(__dirname, "../front/data")
+    const jsonDir = path.join(__dirname, "../../front/data")
     if (!fs.existsSync(jsonDir)) fs.mkdirSync(jsonDir, { recursive: true })
     const jsonPath = path.join(jsonDir, "imagesData.json")
     fs.writeFileSync(jsonPath, JSON.stringify(images, null, 2), "utf-8")
