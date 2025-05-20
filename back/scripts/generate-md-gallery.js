@@ -1,16 +1,23 @@
 // scripts/generate-md-gallery.js
+// Génère un fichier Markdown interactif pour la galerie d’images à partir du JSON produit par list-images.js
+
 import fs from "fs"
 import path from "path"
 import { fileURLToPath } from "url"
 
+// Gestion des chemins absolus en ES module
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
+// Chemin d’entrée : JSON généré par list-images.js
 const dataJsonPath = path.resolve(__dirname, "../front/data/imagesData.json")
-const galleryMdPath = path.resolve(__dirname, "../docs/images-gallery.md") // ou "../images-gallery.md" selon ta structure
+// Chemin de sortie : galerie Markdown pour docs ou racine du projet
+const galleryMdPath = path.resolve(__dirname, "../docs/images-gallery.md")
 
+// Lecture du JSON contenant les infos images
 const images = JSON.parse(fs.readFileSync(dataJsonPath, "utf-8"))
 
+// Fonction utilitaire pour affichage humain de la taille des fichiers
 function humanFileSize(bytes) {
   if (bytes === 0) return "0 Ko"
   const i = Math.floor(Math.log(bytes) / Math.log(1024))
@@ -18,6 +25,7 @@ function humanFileSize(bytes) {
   return (bytes / Math.pow(1024, i)).toFixed(i ? 1 : 0) + " " + sizes[i]
 }
 
+// Début du contenu Markdown + CSS pour la grille
 let md = `
 <!--
 Galerie générée dynamiquement avec toutes les propriétés Cloudinary affichées.
@@ -38,6 +46,7 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
 <div class="gallery">
 `
 
+// Génération d’une card par image, avec actions et variantes de format
 images.forEach((img) => {
   let variants = ""
   if (img.format && img.format !== "avif") {
@@ -78,6 +87,7 @@ images.forEach((img) => {
   `
 })
 
+// JS intégré pour le copier/coller d’URL et les filtres visuels
 md += `</div>
 <script>
 // Boutons Copier
@@ -101,5 +111,10 @@ document.querySelectorAll('.gallery-card').forEach(card => {
 </script>
 `
 
+// Vérifie/crée le dossier cible pour la galerie Markdown
+const galleryDir = path.dirname(galleryMdPath)
+if (!fs.existsSync(galleryDir)) fs.mkdirSync(galleryDir, { recursive: true })
+
+// Génère la galerie Markdown
 fs.writeFileSync(galleryMdPath, md, "utf-8")
 console.log("✅ images-gallery.md généré enrichi et interactif !")
