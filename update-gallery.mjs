@@ -11,13 +11,18 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 // Fonction utilitaire pour lancer une commande synchronously et afficher les logs
-function run(cmd, cwd = process.cwd()) {
+function run(cmd, cwd = process.cwd(), options = {}) {
   console.log(`\n---\n▶️  ${cmd} (in ${cwd})`)
   try {
-    execSync(cmd, { stdio: "inherit", cwd })
+    execSync(cmd, { stdio: "inherit", cwd, ...options })
   } catch (e) {
-    console.error(`❌ Erreur pour "${cmd}" :`, e.message)
-    process.exit(1)
+    // Spécial pour git commit "nothing to commit, working tree clean"
+    if (cmd.startsWith("git commit") && e.status === 1) {
+      console.log("ℹ️  Rien à committer (working tree clean).")
+    } else {
+      console.error(`❌ Erreur pour "${cmd}" :`, e.message)
+      process.exit(1)
+    }
   }
 }
 
