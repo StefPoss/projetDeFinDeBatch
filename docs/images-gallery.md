@@ -45,6 +45,248 @@ Galerie générée dynamiquement avec toutes les propriétés Cloudinary affich�
 </style>
 <div class="gallery">
 
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827941/projectFinDeBatch/front/images/medals/medal-padel-05_shbhmg.png" alt="projectFinDeBatch/front/images/medals/medal-padel-05_shbhmg" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827941/projectFinDeBatch/front/images/medals/medal-padel-05_shbhmg.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.4 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827941/projectFinDeBatch/front/images/medals/medal-padel-05_shbhmg.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827941/projectFinDeBatch/front/images/medals/medal-padel-05_shbhmg.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747827941/projectFinDeBatch/front/images/medals/medal-padel-05_shbhmg.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747827941/projectFinDeBatch/front/images/medals/medal-padel-05_shbhmg.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747827941/projectFinDeBatch/front/images/medals/medal-padel-05_shbhmg.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827625/projectFinDeBatch/front/images/medals/medal-padel-04_pspous.png" alt="projectFinDeBatch/front/images/medals/medal-padel-04_pspous" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827625/projectFinDeBatch/front/images/medals/medal-padel-04_pspous.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827625/projectFinDeBatch/front/images/medals/medal-padel-04_pspous.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827625/projectFinDeBatch/front/images/medals/medal-padel-04_pspous.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747827625/projectFinDeBatch/front/images/medals/medal-padel-04_pspous.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747827625/projectFinDeBatch/front/images/medals/medal-padel-04_pspous.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747827625/projectFinDeBatch/front/images/medals/medal-padel-04_pspous.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827083/projectFinDeBatch/front/images/medals/medal-padel-03_j1xbl9.png" alt="projectFinDeBatch/front/images/medals/medal-padel-03_j1xbl9" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827083/projectFinDeBatch/front/images/medals/medal-padel-03_j1xbl9.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827083/projectFinDeBatch/front/images/medals/medal-padel-03_j1xbl9.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747827083/projectFinDeBatch/front/images/medals/medal-padel-03_j1xbl9.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747827083/projectFinDeBatch/front/images/medals/medal-padel-03_j1xbl9.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747827083/projectFinDeBatch/front/images/medals/medal-padel-03_j1xbl9.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747827083/projectFinDeBatch/front/images/medals/medal-padel-03_j1xbl9.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826944/projectFinDeBatch/front/images/medals/medal-padel-01_yvawlh.png" alt="projectFinDeBatch/front/images/medals/medal-padel-01_yvawlh" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826944/projectFinDeBatch/front/images/medals/medal-padel-01_yvawlh.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826944/projectFinDeBatch/front/images/medals/medal-padel-01_yvawlh.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826944/projectFinDeBatch/front/images/medals/medal-padel-01_yvawlh.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747826944/projectFinDeBatch/front/images/medals/medal-padel-01_yvawlh.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747826944/projectFinDeBatch/front/images/medals/medal-padel-01_yvawlh.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747826944/projectFinDeBatch/front/images/medals/medal-padel-01_yvawlh.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,padel">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826943/projectFinDeBatch/front/images/medals/medal-padel-02_enz2s8.png" alt="projectFinDeBatch/front/images/medals/medal-padel-02_enz2s8" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826943/projectFinDeBatch/front/images/medals/medal-padel-02_enz2s8.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, padel</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826943/projectFinDeBatch/front/images/medals/medal-padel-02_enz2s8.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826943/projectFinDeBatch/front/images/medals/medal-padel-02_enz2s8.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747826943/projectFinDeBatch/front/images/medals/medal-padel-02_enz2s8.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747826943/projectFinDeBatch/front/images/medals/medal-padel-02_enz2s8.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747826943/projectFinDeBatch/front/images/medals/medal-padel-02_enz2s8.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,moovetiapp">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png" alt="projectFinDeBatch/front/images/default-profile_exgh99" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.4 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, moovetiapp</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747826317/projectFinDeBatch/front/images/default-profile_exgh99.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826244/projectFinDeBatch/front/images/medals/medal-natation-05_ffqmbj.png" alt="projectFinDeBatch/front/images/medals/medal-natation-05_ffqmbj" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826244/projectFinDeBatch/front/images/medals/medal-natation-05_ffqmbj.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826244/projectFinDeBatch/front/images/medals/medal-natation-05_ffqmbj.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826244/projectFinDeBatch/front/images/medals/medal-natation-05_ffqmbj.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747826244/projectFinDeBatch/front/images/medals/medal-natation-05_ffqmbj.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747826244/projectFinDeBatch/front/images/medals/medal-natation-05_ffqmbj.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747826244/projectFinDeBatch/front/images/medals/medal-natation-05_ffqmbj.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-03_rwic13.png" alt="projectFinDeBatch/front/images/medals/medal-natation-03_rwic13" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-03_rwic13.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-03_rwic13.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-03_rwic13.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-03_rwic13.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-03_rwic13.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-03_rwic13.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-04_dabzkx.png" alt="projectFinDeBatch/front/images/medals/medal-natation-04_dabzkx" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-04_dabzkx.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.4 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-04_dabzkx.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-04_dabzkx.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-04_dabzkx.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-04_dabzkx.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747826097/projectFinDeBatch/front/images/medals/medal-natation-04_dabzkx.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-01_sva2zb.png" alt="projectFinDeBatch/front/images/medals/medal-natation-01_sva2zb" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-01_sva2zb.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-01_sva2zb.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-01_sva2zb.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-01_sva2zb.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-01_sva2zb.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-01_sva2zb.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
+  <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
+    <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-02_gg4olk.png" alt="projectFinDeBatch/front/images/medals/medal-natation-02_gg4olk" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-02_gg4olk.png">
+    <div class="cloud-info">
+      Format : <b>png</b> | Dimensions : <b>1024×1024</b> | Taille : <b>1.5 Mo</b>
+    </div>
+    <div class="cloud-tags">Tags : icon, medal, moovetiapp, natation</div>
+    <div class="gallery-actions">
+      <button onclick="window.open('https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-02_gg4olk.png', '_blank')">Ouvrir</button>
+      <button class="copy-btn" data-url="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-02_gg4olk.png">Copier URL</button>
+      <button class="filter-btn" data-filter="grayscale">Niveaux de gris</button>
+      <button class="filter-btn" data-filter="none">Couleurs normales</button>
+    </div>
+    
+      <div class="gallery-variant">
+        Voir en :
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_avif,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-02_gg4olk.png" target="_blank">AVIF</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_jpg,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-02_gg4olk.png" target="_blank">JPG</a> |
+        <a href="https://res.cloudinary.com/deuhttaaq/image/upload/f_png,q_auto/v1747811166/projectFinDeBatch/front/images/medals/medal-natation-02_gg4olk.png" target="_blank">PNG</a>
+      </div>
+    
+  </div>
+  
   <div class="gallery-card" data-tags="icon,medal,moovetiapp,natation">
     <img src="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747696/projectFinDeBatch/front/images/medals/medal-natation-05_rhqkre.png" alt="projectFinDeBatch/front/images/medals/medal-natation-05_rhqkre" data-original="https://res.cloudinary.com/deuhttaaq/image/upload/f_auto,q_auto/v1747747696/projectFinDeBatch/front/images/medals/medal-natation-05_rhqkre.png">
     <div class="cloud-info">
